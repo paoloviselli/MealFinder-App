@@ -1,7 +1,9 @@
+import Homepage from "../screens/Homepage";
+
 interface HomeProps {}
 
 const Home: React.FunctionComponent<HomeProps> = () => {
-  return <div>Welocome to a new project!</div>;
+  return <Homepage />;
 };
 
 export default Home;
