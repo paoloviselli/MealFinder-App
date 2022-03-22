@@ -1,9 +1,9 @@
-import { useEffect, useState } from "react";
-import FoodItem from "../../components/FoodItem";
-import Text from "../../components/shared/Text";
-import { Meal } from "../../types/meals";
-import Box from "@mui/material/Box";
-import Grid from "@mui/material/Grid";
+import { useEffect, useState } from 'react';
+import FoodItem from '../../components/FoodItem';
+import Text from '../../components/shared/Text';
+import { Meal } from '../../types/meals';
+import Box from '@mui/material/Box';
+import Grid from '@mui/material/Grid';
 
 interface HomepageProps {}
 
@@ -13,19 +13,19 @@ const Homepage: React.FunctionComponent<HomepageProps> = () => {
 
   const DUMMY_MEAL = {
     id: 33,
-    title: "Carbonara",
-    image: "https://spoonacular.com/recipeImages/716426-312x231.jpg",
-    imageType: "jpg",
+    title: 'Carbonara 23',
+    image: 'https://spoonacular.com/recipeImages/716426-312x231.jpg',
+    imageType: 'jpg',
   };
 
   useEffect(() => {
     const fetchHandler = async () => {
       setIsLoading(true);
       const response = await fetch(
-        "https://api.spoonacular.com/recipes/complexSearch?apiKey=03fede8675cd482c8d3496b0371b6d99"
+        'https://api.spoonacular.com/recipes/complexSearch?apiKey=03fede8675cd482c8d3496b0371b6d99'
       );
       if (!response.ok) {
-        throw new Error("Something went wrong!");
+        throw new Error('Something went wrong!');
       }
 
       const data = await response.json();
