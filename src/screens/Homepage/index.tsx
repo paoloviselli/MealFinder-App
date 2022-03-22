@@ -13,7 +13,7 @@ const Homepage: React.FunctionComponent<HomepageProps> = () => {
 
   const DUMMY_MEAL = {
     id: 33,
-    title: 'Carbonara 23',
+    title: 'Carbonara 69',
     image: 'https://spoonacular.com/recipeImages/716426-312x231.jpg',
     imageType: 'jpg',
   };
